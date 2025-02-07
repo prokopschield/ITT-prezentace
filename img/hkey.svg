@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="176pt" viewBox="0.00 0.00 576.00 176.23">
+<g id="graph0" class="graph" transform="scale(0.612721 0.612721) rotate(0) translate(4 283.62)">
+<title>DataProcessing</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-283.62 936.07,-283.62 936.07,4 -4,4"/>
+<!-- Data -->
+<g id="node1" class="node">
+<title>Data</title>
+<polygon fill="none" stroke="black" points="54.07,-157.95 0.07,-157.95 0.07,-121.95 54.07,-121.95 54.07,-157.95"/>
+<text text-anchor="middle" x="27.07" y="-136.95" font-family="Times,serif" font-size="10.00">Data</text>
+</g>
+<!-- HashedData -->
+<g id="node2" class="node">
+<title>HashedData</title>
+<polygon fill="none" stroke="black" points="180,-261.95 120.14,-261.95 120.14,-225.95 180,-225.95 180,-261.95"/>
+<text text-anchor="middle" x="150.07" y="-240.95" font-family="Times,serif" font-size="10.00">hash(Data)</text>
+</g>
+<!-- Data&#45;&gt;HashedData -->
+<g id="edge2" class="edge">
+<title>Data-&gt;HashedData</title>
+<path fill="none" stroke="black" d="M49.42,-158.31C68.86,-175.02 97.75,-199.85 119.42,-218.47"/>
+<polygon fill="black" stroke="black" points="116.92,-220.93 126.78,-224.8 121.48,-215.62 116.92,-220.93"/>
+<text text-anchor="middle" x="87.07" y="-205.47" font-family="Times,serif" font-size="14.00">hash</text>
+</g>
+<!-- DataChunk -->
+<g id="node3" class="node">
+<title>DataChunk</title>
+<polygon fill="none" stroke="black" points="317.84,-157.95 256.3,-157.95 256.3,-121.95 317.84,-121.95 317.84,-157.95"/>
+<text text-anchor="middle" x="287.07" y="-136.95" font-family="Times,serif" font-size="10.00">DataChunk</text>
+</g>
+<!-- Data&#45;&gt;DataChunk -->
+<g id="edge1" class="edge">
+<title>Data-&gt;DataChunk</title>
+<path fill="none" stroke="black" d="M54.23,-139.95C99.01,-139.95 190.71,-139.95 244.39,-139.95"/>
+<polygon fill="black" stroke="black" points="244.37,-143.45 254.37,-139.95 244.37,-136.45 244.37,-143.45"/>
+</g>
+<!-- Length -->
+<g id="node7" class="node">
+<title>Length</title>
+<polygon fill="none" stroke="black" points="177.07,-53.95 123.07,-53.95 123.07,-17.95 177.07,-17.95 177.07,-53.95"/>
+<text text-anchor="middle" x="150.07" y="-32.95" font-family="Times,serif" font-size="10.00">Length</text>
+</g>
+<!-- Data&#45;&gt;Length -->
+<g id="edge3" class="edge">
+<title>Data-&gt;Length</title>
+<path fill="none" stroke="black" d="M49.42,-121.6C68.86,-104.89 97.75,-80.06 119.42,-61.43"/>
+<polygon fill="black" stroke="black" points="121.48,-64.28 126.78,-55.11 116.92,-58.97 121.48,-64.28"/>
+<text text-anchor="middle" x="87.07" y="-104.53" font-family="Times,serif" font-size="14.00">.len()</text>
+</g>
+<!-- HashedData&#45;&gt;DataChunk -->
+<g id="edge4" class="edge">
+<title>HashedData-&gt;DataChunk</title>
+<path fill="none" stroke="black" d="M174.89,-225.6C196.78,-208.74 229.39,-183.62 253.64,-164.94"/>
+<polygon fill="black" stroke="black" points="255.5,-167.92 261.28,-159.05 251.23,-162.38 255.5,-167.92"/>
+<text text-anchor="middle" x="218.07" y="-211.55" font-family="Times,serif" font-size="14.00">append</text>
+</g>
+<!-- EncryptedDataChunk -->
+<g id="node4" class="node">
+<title>EncryptedDataChunk</title>
+<polygon fill="none" stroke="black" points="655.39,-177.95 552.75,-177.95 552.75,-141.95 655.39,-141.95 655.39,-177.95"/>
+<text text-anchor="middle" x="604.07" y="-156.95" font-family="Times,serif" font-size="10.00">EncryptedDataChunk</text>
+</g>
+<!-- DataChunk&#45;&gt;EncryptedDataChunk -->
+<g id="edge7" class="edge">
+<title>DataChunk-&gt;EncryptedDataChunk</title>
+<path fill="none" stroke="black" d="M318.13,-142.65C350.86,-145.52 404.75,-150.03 451.28,-152.95 480.77,-154.81 513.51,-156.38 541.01,-157.56"/>
+<polygon fill="black" stroke="black" points="540.8,-161.05 550.94,-157.98 541.09,-154.06 540.8,-161.05"/>
+<text text-anchor="middle" x="406.07" y="-155.85" font-family="Times,serif" font-size="14.00">encrypt</text>
+</g>
+<!-- Key -->
+<g id="node8" class="node">
+<title>Key</title>
+<polygon fill="none" stroke="black" points="433.07,-95.95 379.07,-95.95 379.07,-59.95 433.07,-59.95 433.07,-95.95"/>
+<text text-anchor="middle" x="406.07" y="-74.95" font-family="Times,serif" font-size="10.00">Key</text>
+</g>
+<!-- DataChunk&#45;&gt;Key -->
+<g id="edge6" class="edge">
+<title>DataChunk-&gt;Key</title>
+<path fill="none" stroke="black" d="M318.2,-123.99C333.68,-115.79 352.65,-105.73 368.91,-97.12"/>
+<polygon fill="black" stroke="black" points="370.09,-100.45 377.29,-92.68 366.81,-94.27 370.09,-100.45"/>
+<text text-anchor="middle" x="349.07" y="-116.87" font-family="Times,serif" font-size="14.00">hash</text>
+</g>
+<!-- HashOfEncrypted -->
+<g id="node5" class="node">
+<title>HashOfEncrypted</title>
+<polygon fill="none" stroke="black" points="794.07,-177.95 740.07,-177.95 740.07,-141.95 794.07,-141.95 794.07,-177.95"/>
+<text text-anchor="middle" x="767.07" y="-156.95" font-family="Times,serif" font-size="10.00">Hash</text>
+</g>
+<!-- EncryptedDataChunk&#45;&gt;HashOfEncrypted -->
+<g id="edge9" class="edge">
+<title>EncryptedDataChunk-&gt;HashOfEncrypted</title>
+<path fill="none" stroke="black" d="M655.57,-159.95C679.07,-159.95 706.55,-159.95 728.22,-159.95"/>
+<polygon fill="black" stroke="black" points="728.09,-163.45 738.09,-159.95 728.09,-156.45 728.09,-163.45"/>
+<text text-anchor="middle" x="698.07" y="-164.15" font-family="Times,serif" font-size="14.00">hash</text>
+</g>
+<!-- HKey -->
+<g id="node6" class="node">
+<title>HKey</title>
+<polygon fill="none" stroke="black" points="932.07,-111.95 878.07,-111.95 878.07,-75.95 932.07,-75.95 932.07,-111.95"/>
+<text text-anchor="middle" x="905.07" y="-90.95" font-family="Times,serif" font-size="10.00">HKey</text>
+</g>
+<!-- HashOfEncrypted&#45;&gt;HKey -->
+<g id="edge10" class="edge">
+<title>HashOfEncrypted-&gt;HKey</title>
+<path fill="none" stroke="black" d="M794.29,-147.23C815.18,-137.09 844.64,-122.79 867.79,-111.56"/>
+<polygon fill="black" stroke="black" points="869.1,-114.82 876.57,-107.3 866.04,-108.52 869.1,-114.82"/>
+<text text-anchor="middle" x="836.07" y="-142.81" font-family="Times,serif" font-size="14.00">combine</text>
+</g>
+<!-- Length&#45;&gt;DataChunk -->
+<g id="edge5" class="edge">
+<title>Length-&gt;DataChunk</title>
+<path fill="none" stroke="black" d="M174.89,-54.31C196.78,-71.16 229.39,-96.29 253.64,-114.97"/>
+<polygon fill="black" stroke="black" points="251.23,-117.53 261.28,-120.86 255.5,-111.98 251.23,-117.53"/>
+<text text-anchor="middle" x="218.07" y="-104.53" font-family="Times,serif" font-size="14.00">append</text>
+</g>
+<!-- Key&#45;&gt;EncryptedDataChunk -->
+<g id="edge8" class="edge">
+<title>Key-&gt;EncryptedDataChunk</title>
+<path fill="none" stroke="black" d="M433.5,-89.01C462.92,-101.32 511.26,-121.54 548.81,-137.25"/>
+<polygon fill="black" stroke="black" points="547.12,-140.34 557.69,-140.97 549.82,-133.88 547.12,-140.34"/>
+<text text-anchor="middle" x="493.07" y="-135.29" font-family="Times,serif" font-size="14.00">encryption key</text>
+</g>
+<!-- Key&#45;&gt;HKey -->
+<g id="edge11" class="edge">
+<title>Key-&gt;HKey</title>
+<path fill="none" stroke="black" d="M433.44,-78.8C516,-81.46 769.74,-89.63 866.27,-92.74"/>
+<polygon fill="black" stroke="black" points="866.14,-96.23 876.25,-93.06 866.37,-89.24 866.14,-96.23"/>
+<text text-anchor="middle" x="698.07" y="-92.17" font-family="Times,serif" font-size="14.00">combine</text>
+</g>
+</g>
+</svg>
